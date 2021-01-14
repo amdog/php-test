@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: tomato;
+}
+.body {
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.body #main {
+  width: 100vw;
+  background: tomato;
+  position: absolute;
+  float: left;
+  top: 0;
+  height: auto;
+}
+.body #main .page {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+  margin-top: -4px;
+  background-color: tomato;
+}
+.body #main .page:last-of-type {
+  margin-top: -4px;
+  margin-bottom: -4px;
+}

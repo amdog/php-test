@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们回忆</title>
+    <link rel="stylesheet" href="/sty.4f16ef4c.css">
+<script src="/sty.4f16ef4c.js"></script></head>
+<body>
+    <div class="body">
+        <div id="main">
+            <iframe class="page" src="/page\login.html" width="100%" marginwidth="0" marginheight="0 height=" 100%"="" frameborder="0" scrolling="no" sendbox="" seamless=""></iframe>
+            <iframe class="page" src="/page\page.html" width="100%" marginwidth="0" marginheight="0 height=" 100%"="" frameborder="0" scrolling="no" sendbox="" seamless=""></iframe>
+            <iframe class="page" src="/page\page.html" width="100%" marginwidth="0" marginheight="0 height=" 100%"="" frameborder="0" scrolling="no" sendbox="" seamless=""></iframe>
+        </div>
+    </div>
+</body>
+<script>var scroll = 0;
+var target = -4;
+var startTime = new Date().getTime();
+var endTime = 0;
+
+$ = function $(ele) {
+  return document.querySelectorAll(ele);
+};
+
+function scrollNext(dir) {
+  dir > 0 ? scroll-- : scroll++;
+
+  if (scroll <= 0 && scroll > target) {
+    $('#main')[0].style.top = "".concat(scroll * window.document.documentElement.clientHeight, "px");
+  } else {
+    scroll > 0 ? scroll = 0 : null;
+    scroll <= target ? scroll = target + 1 : null;
+  }
+
+  endTime = new Date().getTime();
+}</script>
+</html>

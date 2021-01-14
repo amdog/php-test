@@ -1,0 +1,147 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+@keyframes clickBoxA {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.clickBox {
+  background-color: violet;
+  width: 30px;
+  height: 30px;
+  z-index: 100;
+  top: 0;
+  position: relative;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  animation: clickBoxA 1s ease-in-out;
+  transform: rotate(-45deg);
+}
+.clickBox:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: violet;
+}
+.clickBox:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: violet;
+  border-radius: 50%;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login .right-box {
+  width: 400px;
+  height: 700px;
+  margin-left: 90px;
+}
+.login .right-box form textarea {
+  width: 100%;
+  margin-top: 12px;
+  height: 300px;
+  outline: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: tomato;
+}
+.login .right-box form .title {
+  margin: 0;
+}
+.login .right-box form input {
+  width: 400px;
+  height: 36px;
+  outline: none;
+  border: 0;
+  margin-top: 100px;
+  background-color: tomato;
+  border-bottom: 1px solid #ffffff;
+}
+.login .right-box form input:last-of-type {
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  letter-spacing: 10px;
+}
+.login .left-box {
+  width: 600px;
+  height: 600px;
+  background-color: tomato;
+}
+.login .left-box img {
+  border: 10px solid #ffffff;
+  box-shadow: 0px 0px 3px 3px #aaaaaa;
+}
+.sign {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
+.sign form {
+  display: block;
+  background-color: tomato;
+  width: 600px;
+  height: 500px;
+}
+.sign form input:focus {
+  border-bottom: 1px #8f0505 solid;
+}
+.sign form input:nth-of-type(5) {
+  width: 350px;
+  letter-spacing: 20px;
+  border: #ffffff solid 1px;
+  border-radius: 5px;
+}
+.sign form input:nth-of-type(6) {
+  width: 100px;
+  border: #ffffff solid 1px;
+  border-radius: 5px;
+}
+.sign form input {
+  width: 500px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: tomato;
+  outline: none;
+  border: 0;
+  border-bottom: 1px #ffffff solid;
+}
+
+
+/*# sourceMappingURL=/style.6cb90fb5.css.map */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="没有拉姆博客,一个简陋的博客">
+  <meta name="baidu-site-verification" content="code-GylTrxfZNe" />
+  <title>没有拉姆</title>
+</head>
+<style>
+  body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  form{
+    width: 600px;
+    height: 350px;
+    border: #999 solid 1px;
+    border-radius: 30px;
+    position: fixed;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  form>div{
+    height: 30px;
+    width: 400px;
+  }
+  input{
+    border: 1px solid #666;
+    outline-color: #333;
+    border-radius: .4em;
+  }
+  .block1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .block1>a>img{
+    margin-left: 50px;
+    width: 150px;
+    height: 30px;
+  }
+  .block1>input{
+    width: 100px;
+    height: 30px;
+  }
+
+  .block2>input:nth-child(1){
+    width: 100px;
+    height: 30px;
+    background-color:#fff;
+    border: #999 solid 1px;
+    margin-right: 40px;
+    border-radius: 0.3em;
+    margin-left: 50px;
+  }
+  .block2>input:nth-child(2){
+    width: 150px;
+    height: 30px;
+    background-color: rgb(78, 129, 238);
+    border: 0;
+    border-radius: 0.3em;
+  }
+  .block3{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form>input{
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+</style>
+<body> 
+
+  <form action="./login.html" method="GET">  
+  <div class="block2">
+    使用统一登录【没有拉姆工作室】
+  </div>
+  <input type="text" placeholder="用户名" name="name">
+  <input type="password" placeholder="密码" name="passwd">
+  <div class="block1">
+  <a href="/blog/js-css-html/login.html"><img src="http://chatjs.top/login/secretimg.svg" alt="secret.svg"></a><input type="text" name="code">
+  </div>
+  <div class="block2">
+    <input value="重置" type="button"><input type="submit" value="登录">
+  </div>
+  <div class="block3">
+      <span>第三方登录:</span><img  src="../img/github.svg">
+  </div>
+</form>
+</body>
+
+</html>

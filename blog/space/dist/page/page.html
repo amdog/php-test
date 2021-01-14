@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.6cb90fb5.css">
+</head>
+<body class="page1">
+    <div class="next"></div>
+    <script>$('body')[0].addEventListener('click', function (e) {
+  var ele = document.createElement('div');
+  ele.className = 'clickBox';
+  $('body')[0].appendChild(ele);
+  setTimeout(function () {
+    ele.parentNode.removeChild(ele);
+  }, 500);
+  ele.style.top = "".concat(e.clientY - 15, "px");
+  ele.style.left = "".concat(e.clientX - 15, "px");
+});</script>
+</body>
+</html>

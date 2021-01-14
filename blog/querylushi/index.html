@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炉石鬼套路</title>
+</head>
+<body>
+    <video src="./bg.mp4"  autoplay muted loop poster="./img/bg.jpg">
+    </video>
+    <div class="container">
+        <h1>最新章节《奥丹姆骑兵》</h1> 
+        <br>
+        <div class="to-next"> <img src="./img/toright.svg"><a href="./view/body.php">炉啊炉鬼套路</a></div>
+        <br>
+        <a href="./view/login.php">登录/注册</a>
+        <br>
+        <br>
+        <br>
+        <small>本站为教学演示用途 图片视频版权归《炉石传说》官方所有</small>
+    </div>
+    <script>
+        window.onload=()=>{
+            document.getElementsByTagName('video')[0].play()
+            setTimeout(()=>{
+                document.getElementsByClassName('container')[0].style.animation='fadein 2s ease-in-out forwards'
+            },3000)
+        }
+    </script>
+</body>
+<style>
+    a:hover{
+        color: #999;
+        text-decoration: underline;
+    }
+    a:link{
+        color:#ffb033 ;
+        font-size: 20px;
+    }
+    a:visited{
+        color:#ffb033 ;
+    }
+    @keyframes fadein {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .container{
+        width: 400px;
+        height: 200px;
+        color: #000000;
+        background: none;
+        position: fixed;
+        top: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+        z-index:1;
+        left: 50%;
+        opacity: 0;
+    }
+    .to-next>a:link{
+        color:inherit;
+        text-decoration: none;
+    }
+    .to-next>a:visited{
+        color:#fff ;
+    }
+    .to-next>img{
+        width: 70px;
+        height: 40px;
+    }
+    .to-next:hover{
+        cursor: pointer;
+        color: #000000;
+        text-decoration: underline;
+    }
+    .to-next{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 60px;
+        font-size: 22px;
+        color: #fff;
+        background: #00a5e2;
+        box-shadow: 0 0 0px 5px #60cdf5;
+        margin: 0 auto;
+        border: 0;
+        border-radius: 6px;
+        text-align: center;
+        line-height: 60px;
+    }
+    body{
+        width: 100vw;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    video{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -300;
+    }
+</style>
+</html>
